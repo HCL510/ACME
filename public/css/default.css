@@ -1,41 +1,95 @@
-body{
-    background-color: none;
-    /*z-index: 0;*/
-    /*opacity: 0.2;*/
+body {
+margin: 0;
+background: #000; 
 }
-
+video { 
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg') no-repeat;
+background-size: cover;
+transition: 1s opacity;
+opacity: 0.6;
+}
+.stopfade { 
+   opacity: .1;
+}
+#polina button { 
+  display: block;
+  width: 10%;
+  background: none;
+  color: rgb(255,255,255);
+  margin-left: 20px;
+  padding: 15px;
+  border-style: none;
+  border-color: none;
+}
+.text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight:100; 
+  color: white;
+  padding: 50px;
+  width: 80%;
+  margin-left: 150px;
+  margin-top: 60px;
+  font-size: 1.25em;
+  text-align: justify;
+}
 .navbar {
     list-style-type: none;
-    margin: -8px;
-    padding: -8px;
+    margin: -4px;
+    padding: -6px;
     overflow: hidden;
-    background-color: black;
+    background-color: none;
     }
-
     .navbar img {
-            margin-top: 20px;
-            margin-right: 30px;
+            margin-top: 30px;
+            margin-right: 60px;
             float: right;    
     }
-
     .navbar li {
             float: left;
             margin-right: 60px;
     }
-
     .navbar li a {
            font-family: "Courier New", Courier, monospace;
-           font-size: 1em;
+           font-size: 1.0em;
            display: inline-block;
-           color: white;
+           color: rgb(255,255,255);
            text-align: center;
-           padding: 22px 24px;
+           padding: 34px 26px;
            text-decoration: none;
     }
-
-     .navbar li a:hover {
-               background-color: grey;
+     /*.navbar li */
+     a:hover {
+               background-color: rgba(255,255,255,0.23);
+               cursor: pointer;
+               transition: .3s background;
     }
-    p {
-      margin-top: 50px;
-    }
+#work{
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+background-image: url("/images/smile.jpg");
+background-size: cover;
+opacity: 0.5;
+}
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}    

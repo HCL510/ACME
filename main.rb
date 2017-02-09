@@ -2,6 +2,8 @@
 # ruby 2.0.0
 
 require 'sinatra'
+require 'sendgrid-ruby'
+require 'ruby_http_client'
 
 get '/' do
   erb :home
