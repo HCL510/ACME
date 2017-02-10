@@ -11,6 +11,8 @@ GEM
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
     tilt (2.0.6)
 
 PLATFORMS
@@ -20,6 +22,7 @@ DEPENDENCIES
   ruby_http_client
   sendgrid-ruby
   sinatra
+  sinatra-flash
 
 BUNDLED WITH
    1.14.3

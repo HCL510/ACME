@@ -208,11 +208,11 @@ opacity: 0.8;
     color:#888;
 }
 #confirm {
-  background-color: #ffffff;
-  color: #000000;
-  font-weight: bold;
-  text-align: center;  
+  background-color: #33CC33;
+  color: #fff;
+  font-weight: bold;  
 }
+
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
 }

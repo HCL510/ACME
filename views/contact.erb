@@ -1,11 +1,43 @@
 <!-- contact.erb -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CONTACT</title>
-</head>
-<body>
-<p>CONTACT PAGE</p>
-
-</body>
-</html>
+<div id = "contact"></div>
+<% if flash[:confirm] %>
+<div id="confirm"><%= flash[:confirm] %></div>
+<% end %>
+<div class="wrapper">
+	<div id="main" style="padding:50px 0 0 0;">
+		<!-- Form -->
+		<form id="contact-form" action="/contact" method="POST">
+			<h3>Let Us Help You</h3>
+			<h4>Fill in the form below, and we'll get back to you quickly.</h4>
+			<div>
+				<label>
+					<span>Name: (required)</span>
+					<input name="name" placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email: (required)</span>
+					<input name="email" placeholder="Please enter your email address" type="email" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Telephone: (required)</span>
+					<input name="phone" placeholder="Please enter your number" type="tel" tabindex="3" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Message:</span>
+					<textarea name="comment" placeholder="Include your details please" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button type="submit" id="contact-submit">Send Email</button>
+			</div>
+		</form>
+		<!-- /Form -->		
+	</div>
+</div>
+<script src="js/main.js"></script>
